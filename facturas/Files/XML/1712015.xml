@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Fecha="2020-05-19T16:48:56" NoCertificado="00001000000403185533" Certificado="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" FormaPago="03" Moneda="MXN" MetodoPago="PUE" Folio="1712015" TipoDeComprobante="I" LugarExpedicion="72160" SubTotal="6896.55" Total="8000.00" Sello="RD5TiKXH7YsLXx5Ny1QVG2QiAGgW7NjKuFPwDj8w9PpIcaOdSRKaB3pA0FayCMGeecBDisr9SThrmFLUtdEq+3Vcy0mn3DTbBBFLRzPFh74UhO+jNZXWCFMXlmcZ0uxsRtsCRQeps5aF9tWVgZm0GQlY7RSCez21xx5KgPLwveRGFdEvpKTt9HRBc4MC8PgduiscwLBpfTu1jvnYyZfSzpxMfvcs2ZOKjkqy0mPfUlfd0DJs9UYOFD03Q6rDowJF583ZMxpv6w8iTi+LLHxksLnD9NdAsy7wIBd9qOHoJK2nViPI7CUNH8xfoOD5ta0CIm8+rc8COOYSm5mOv09umw==">
+  <cfdi:Emisor Rfc="MMO120416IB6" Nombre="MICROTECNOLOGIAS MOVILES SA DE CV" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="TCT0204085Q5" Nombre="TELEFONIA CELULAR DE TLAXCALA SA DE CV" UsoCFDI="G03"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="43191500" ClaveUnidad="H87" Cantidad="1" ValorUnitario="6896.551724" Descripcion="Tiempo aire electronico ref MP2 1712015 (micd10275)" Importe="6896.551724">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6896.551724" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1103.448276"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="1103.45">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1103.45"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

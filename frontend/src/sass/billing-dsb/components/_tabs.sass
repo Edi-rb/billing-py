@@ -1,0 +1,23 @@
+$bt_tabs: '.bt_tabs'
+
+#{$bt_tabs}
+    
+    &--blue
+        background-color: #263da7 !important
+        #{$bt_tabs}__opc
+            background-color: #263da7
+            color: #ffffff !important
+            .opc-icon
+                color: #ffffff !important
+    &__opc
+        flex-wrap: wrap
+        padding-top: 4px
+        padding-bottom: 4px
+        &.v-tab--active
+            background-color: #5473e8
+        .opc-icon
+            width: 100%
+
+.v-tabs
+    &.bt_tabs--blue
+        background-color: #263da7 !important                

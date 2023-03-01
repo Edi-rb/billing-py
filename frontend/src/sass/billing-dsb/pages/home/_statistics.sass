@@ -1,0 +1,21 @@
+$card-sts : '.card-sts'
+
+#{$card-sts}
+    height: 100%
+    &__info
+        display: flex
+        flex-wrap: wrap
+        padding: .4rem
+        width: 120px
+        max-width: 100%
+
+$chart-graphs: '.chart-graphs'    
+
+#{$chart-graphs}
+    &__line
+        height: 300px
+        @media (max-width: 960px)
+            height: auto
+        .ct-square
+            max-height: 300px
+            width: 100%

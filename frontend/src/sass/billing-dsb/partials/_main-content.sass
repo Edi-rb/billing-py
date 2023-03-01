@@ -1,0 +1,10 @@
+// Override general v-content container
+$v-content : '.v-content'
+
+#{$v-content}
+    width: calc(100% - 56px)
+
+.v-navigation-drawer--is-mousehover
+    & + .v-content
+        width: calc(100% - 256px)
+        

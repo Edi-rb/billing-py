@@ -1,0 +1,36 @@
+$bt_table: '.bt_table'
+
+#{$bt_table}
+    .v-data-table__wrapper
+        table
+            thead
+                background-color: #2b43a5
+                th
+                    color: #ffffff
+                    border-right: 1px solid #fff
+                    &:last-child
+                        border-right: none
+                    &.active
+                        color: #ffffff !important
+                        .v-data-table-header__icon
+                            color: #ffffff !important
+                            margin-left: 6px
+                    &:hover
+                        color: #ffffff !important
+            tbody
+                tr
+                    &:nth-child(odd)
+                        background: #c0d6fd
+                        border-bottom: 3px solid white  
+                    &:hover
+                        background-color: #7f96ef !important
+        .btntb
+            font-size: 15px
+            background: #5473e8
+            padding: 5px
+            border-radius: 3px
+            color: #ffffff !important
+            &btntb
+                background: #5473e8
+            &--remove
+                background: #FF5252

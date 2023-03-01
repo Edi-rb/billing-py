@@ -1,0 +1,37 @@
+Agregar nueva empresa a facturación
+
+- convertir los archivos .cer(certificado) y .key (llave privada) a .pem, para que desde PHP se puedan manipular.
+  Para converti los archivos necesitas tener openssl https://sourceforge.net/projects/openssl/(link agosto 2018) en WINDOWS
+  descomprimes y en la carpeta /bin buscar el .exe
+
+  copiar tu archivo al mismo nivel del ejecutable .exec
+
+  el CMD se abrira con el BASH 
+  OpenSSL >
+  
+  convertir el archivo .cer(certificado) con el siguiente comando 
+    OpenSSL > x509 -inform der -in certificado.cer -out certificadoconvertido.pem
+
+  convertir el archivo .key (llave privada) con el siguiente comando
+    OpenSSL > pkcs8 -inform DER -in llaveprivada.key -out llaveprivadaconvertida.key.pem
+    Enter Password: miclavedefacturacion
+
+  este comando te pedira una contrraseña y colocas la contraseña que obtuviste al obtener el certificado (clave de facturación)
+
+  EN LINUX los comandos son
+  openssl x509 -inform der -in certificado.cer -out certificadoconvertido.pem
+  openssl pkcs8 -inform DER -in llaveprivada.key -out llaveprivadaconvertida.key.pem
+
+- EN EL servidor hay que crear las carpeta para la nueva empresa para que se alogen sus archivos.
+
+- añadir los certificados y llave .pem a la ruta CSD del servidor
+
+- modificar el PHP
+   añadir la nueva empresa al metodo generarCertificado()
+   se añadae un else if
+   con el numero de certificado y la ruta del certificado
+
+   añadir al metodo añadirSello()
+   	la ruta de la llave privada el .key.pem
+
+   	a la funcion llerArchivo añadir la ruta de la nueva empresa, crea ese grupo de carpetas en el servidor

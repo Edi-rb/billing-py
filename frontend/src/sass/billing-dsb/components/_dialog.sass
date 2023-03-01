@@ -1,0 +1,27 @@
+$bt_dialog: '.bt_dialog'
+
+#{$bt_dialog}
+    &__title
+        background-color: #5473e8
+        color: #ffffff
+        font-size: 9px
+        overflow: hidden
+        position: relative
+        z-index: 2
+        .headline
+            position: relative
+        &:before
+            content: ''
+            position: absolute
+            top: -38px
+            left: -19px
+            height: 130%
+            width: 120%
+            background-color: #758ee6
+            transform: rotate(-6deg)
+            z-index: 0
+    &__container
+        background-color: #ffffff
+    &__actions
+        background-color: #5473e8
+        color: #ffffff

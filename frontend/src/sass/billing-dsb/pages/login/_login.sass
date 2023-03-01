@@ -1,0 +1,70 @@
+$bt_login: '.bt_login'
+
+#{$bt_login}
+    background-color: #263da9
+    &__container
+        height: 100%    
+    &__signup
+        .v-text-field--outlined
+            color: #ffffff !important
+            fieldset
+                border-color: #ffffff
+                color: #ffffff
+                legend
+                    span
+                        color: #ffffff
+        .v-text-field__slot                        
+            .v-label
+                color: #ffffff !important
+        .theme--light.v-label,
+        .v-text-field--outlined legend
+            color: rgba(255, 254, 254, 0.6)
+        .primary--text,
+        input, textarea
+            color: #ffffff !important
+        
+        
+.v-application
+    .bt_login
+        .primary--text
+            color: #ffffff !important
+
+.diagonal
+    position: relative    
+    &__image
+        position: absolute
+        top: 0
+        left: 0
+        background: 
+            image: url('../assets/invoice.jpg')
+            size: cover
+            position: center
+            repeat: no-repeat
+        height: 100%
+        width: 100%
+        min-height: 0
+        -webkit-transform: skewX(-8deg)
+        transform: skewX(-8deg)
+        -webkit-transform-origin: top right
+        transform-origin: top right
+        z-index: 1
+    &__overlay
+        background: rgba(84,116,232,0.85)
+        background: -moz-linear-gradient(left, rgba(84,116,232,0.85) 0%, rgba(102,127,227,0.7) 100%)
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(84,116,232,0.85)), color-stop(100%, rgba(102,127,227,0.7)))
+        background: -webkit-linear-gradient(left, rgba(84,116,232,0.85) 0%, rgba(102,127,227,0.7) 100%)
+        background: -o-linear-gradient(left, rgba(84,116,232,0.85) 0%, rgba(102,127,227,0.7) 100%)
+        background: -ms-linear-gradient(left, rgba(84,116,232,0.85) 0%, rgba(102,127,227,0.7) 100%)
+        background: linear-gradient(to right, rgba(84,116,232,0.85) 0%, rgba(102,127,227,0.7) 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5474e8', endColorstr='#667fe3', GradientType=1 )
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        min-height: 0
+        -webkit-transform: skewX(-8deg)
+        transform: skewX(-8deg)
+        -webkit-transform-origin: top right
+        transform-origin: top right
+        z-index: 2
